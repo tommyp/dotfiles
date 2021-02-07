@@ -6,3 +6,24 @@
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
 	mergeoptions = --no-edit
+	
+[push]
+	default = current
+
+[alias]
+	amend = commit --amend -C HEAD
+	c = commit
+	cm = commit -m
+	co = checkout
+	d = diff --no-prefix
+	dc = diff --no-prefix --cached
+	f = fetch --prune
+	ff = merge --ff-only
+	ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >> .gitignore
+	l = log --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+	lg = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s'
+	ll = log --stat --abbrev-commit
+	rc = rebase --continue
+	rd = push origin --delete
+	s = status --short --branch
+	track = !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
