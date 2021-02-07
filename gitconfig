@@ -1,0 +1,8 @@
+[user]
+	name = Tommy Palmer
+	email = hi@tommyp.org
+
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = /usr/bin/vim
+	mergeoptions = --no-edit
