@@ -14,7 +14,7 @@ readonly DOTFILES="
 
 for file in $DOTFILES; do
   if [[ -n "$file" ]]; then
-    ln -sf ~/dotfiles/$file ~/.$file
+    ln -sf ~/Code/dotfiles/$file ~/.$file
   fi
 done
 
