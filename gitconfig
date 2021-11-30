@@ -27,3 +27,5 @@
 	rd = push origin --delete
 	s = status --short --branch
 	track = !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
+[init]
+	defaultBranch = main
