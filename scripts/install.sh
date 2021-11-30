@@ -19,4 +19,5 @@ for file in $DOTFILES; do
 done
 
 # vs code
-ln -sf ~/dotfiles/vscode_settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+ln -sf ~/Code/dotfiles/vscode_settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+
